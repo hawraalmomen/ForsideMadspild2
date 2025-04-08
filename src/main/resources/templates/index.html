@@ -2,12 +2,21 @@
 <html lang="da">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danmark mod madspild</title>
     <style>
         body {
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: black;
             font-family: Arial, sans-serif;
+
+        }
+
+        header{
+            text-align: center;
+            padding: 20px;
+            background-color: lawngreen;
+            color: white;
         }
         .container{
             display: flex;
@@ -25,10 +34,65 @@
             text-align: right;
             max-width: 400px;
         }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        .navbar ul {
+            list-style: nonne;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #575757;
+        }
+
+        .nav-left {
+            flex-grow: 1;
+        }
+
+        .nav-right {
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
+
+
     <h1 style="text-align: center;">Danmark mod madspild</h1>
+
+    <nav class="navbar">
+        <ul class="nav-left">
+            <li><a href="forside">Forside</a></li>
+            <li><a href ="fakta">Fakta</a></li>
+            <li><a href="tips">Tips og råd</a></li>
+            <li><a href="events">Events</a></li>
+            <li><a href="about">Om os</a></li>
+        </ul>
+
+        <ul class="nav-right">
+            <li><a href="login">Login</a></li>
+        </ul>
+    </nav>
 
     <p style="text-align: center;" >Til kampen mod madspild!</p>
 
